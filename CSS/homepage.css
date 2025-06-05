@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr; /* Navigation, About Us, Vinyl Collection */
+    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+    gap: 1px; /* To simulate the thin borders */
+    background-color: #fff; /* White lines */
+    width: 90%; /* Adjust as needed */
+    max-width: 1200px; /* Max width for the layout */
+    border: 1px solid #fff;
+}
+
+.header-area, .main-content, .footer-area {
+    background-color: #000;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content for header/footer cells */
+}
+
+.header-area {
+    grid-column: 1 / span 3; /* Spans all three columns */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; /* Adjust padding for header */
+}
+
+.logo {
+    flex-basis: 200px; /* Matches navigation width */
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    grid-column: 1 / span 3; /* Main content area spans all columns in its row */
+    display: grid;
+    grid-template-columns: subgrid; /* Allows children to use the parent's grid definition */
+    grid-template-rows: 1fr; /* One row for main content sections */
+    padding: 0; /* Remove padding from main-content to let children control it */
+}
+
+.navigation {
+    background-color: #000;
+    padding: 20px;
+    box-sizing: border-box;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+}
+
+.about-us {
+    background-color: #000;
+    padding: 20px;
+    box-sizing: border-box;
+    grid-column: 2;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; /* Align content to the top */
+}
+
+.vinyl-collection {
+    background-color: #000;
+    padding: 20px;
+    box-sizing: border-box;
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.vinyl-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 squares per row, 100px size */
+    gap: 10px;
+    justify-content: center;
+}
+
+.vinyl-item {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+}
+
+.show-all-button {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer-area {
+    grid-column: 1 / span 3; /* Spans all three columns */
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    align-self: flex-start; /* Align headings to the left */
+}
+
+p {
+    line-height: 1.5;
+}
