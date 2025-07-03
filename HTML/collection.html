@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kollektion – Vinyl-Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/homepage.css">
+  <link rel="stylesheet" href="../CSS/collection.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <header>
+    <div class="logo"><img src="../Bilder/logo.png" alt="logo"></div>
+    <div class="header-title"><strong>Kollektion</strong></div>
+    <div class="header-actions">
+      <a href="login.html" class="login-button">
+        <i class="fa-solid fa-user"></i>
+        Login
+      </a>
+    </div>
+  </header>
+
+  <div class="main-layout" style="grid-template-columns: 70px 1fr;">
+    <nav>
+      <ul>
+        <li><a href="homepage.html"><i class="fa-solid fa-house"></i><span>  Startseite</span></a></li>
+        <li><a href="collection.html"><i class="fa-solid fa-compact-disc"></i><span>  Kollektion</span></a></li>
+        <li><a href="kontakt.html"><i class="fa-solid fa-envelope"></i><span>  Kontakt</span></a></li>
+      </ul>
+    </nav>
+
+    <section class="collection-section">
+      <div class="collection-header">
+        <h1>Unsere Vinyl-Kollektion</h1>
+        <div class="collection-filters">
+          <div class="filter-group">
+            <select class="filter-select">
+              <option value="">Alle Genres</option>
+              <option value="rock">Rock</option>
+              <option value="pop">Pop</option>
+              <option value="jazz">Jazz</option>
+              <option value="electronic">Electronic</option>
+              <option value="hip-hop">Hip-Hop</option>
+              <option value="classical">Classical</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <select class="filter-select">
+              <option value="">Preis sortieren</option>
+              <option value="low-high">Preis: Niedrig zu Hoch</option>
+              <option value="high-low">Preis: Hoch zu Niedrig</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../Bilder/i-am-music-playboi-carti.png" alt="MUSIC - Playboi Carti">
+            <div class="product-overlay">
+              <button class="quick-view-btn">
+                <i class="fa-solid fa-eye"></i>
+                Schnellansicht
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">MUSIC</h3>
+            <p class="product-artist">Playboi Carti</p>
+            <p class="product-genre">Hip-Hop</p>
+            <div class="product-price">
+              <span class="price-current">39,99 €</span>
+              <span class="price-old">44,99 €</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fa-solid fa-shopping-cart"></i>
+              In den Warenkorb
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://via.placeholder.com/300x300/FF6B6B/FFFFFF?text=Abbey+Road" alt="Abbey Road - The Beatles">
+            <div class="product-overlay">
+              <button class="quick-view-btn">
+                <i class="fa-solid fa-eye"></i>
+                Schnellansicht
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Abbey Road</h3>
+            <p class="product-artist">The Beatles</p>
+            <p class="product-genre">Rock</p>
+            <div class="product-price">
+              <span class="price-current">34,99 €</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fa-solid fa-shopping-cart"></i>
+              In den Warenkorb
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://via.placeholder.com/300x300/4ECDC4/FFFFFF?text=Random+Access+Memories" alt="Random Access Memories - Daft Punk">
+            <div class="product-overlay">
+              <button class="quick-view-btn">
+                <i class="fa-solid fa-eye"></i>
+                Schnellansicht
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Random Access Memories</h3>
+            <p class="product-artist">Daft Punk</p>
+            <p class="product-genre">Electronic</p>
+            <div class="product-price">
+              <span class="price-current">42,99 €</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fa-solid fa-shopping-cart"></i>
+              In den Warenkorb
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://via.placeholder.com/300x300/45B7D1/FFFFFF?text=Kind+of+Blue" alt="Kind of Blue - Miles Davis">
+            <div class="product-overlay">
+              <button class="quick-view-btn">
+                <i class="fa-solid fa-eye"></i>
+                Schnellansicht
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Kind of Blue</h3>
+            <p class="product-artist">Miles Davis</p>
+            <p class="product-genre">Jazz</p>
+            <div class="product-price">
+              <span class="price-current">29,99 €</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fa-solid fa-shopping-cart"></i>
+              In den Warenkorb
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://via.placeholder.com/300x300/96CEB4/FFFFFF?text=Thriller" alt="Thriller - Michael Jackson">
+            <div class="product-overlay">
+              <button class="quick-view-btn">
+                <i class="fa-solid fa-eye"></i>
+                Schnellansicht
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Thriller</h3>
+            <p class="product-artist">Michael Jackson</p>
+            <p class="product-genre">Pop</p>
+            <div class="product-price">
+              <span class="price-current">37,99 €</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fa-solid fa-shopping-cart"></i>
+              In den Warenkorb
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://via.placeholder.com/300x300/FFEAA7/333333?text=The+Dark+Side" alt="The Dark Side of the Moon - Pink Floyd">
+            <div class="product-overlay">
+              <button class="quick-view-btn">
+                <i class="fa-solid fa-eye"></i>
+                Schnellansicht
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">The Dark Side of the Moon</h3>
+            <p class="product-artist">Pink Floyd</p>
+            <p class="product-genre">Rock</p>
+            <div class="product-price">
+              <span class="price-current">32,99 €</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fa-solid fa-shopping-cart"></i>
+              In den Warenkorb
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://via.placeholder.com/300x300/DDA0DD/FFFFFF?text=Blond" alt="Blond - Frank Ocean">
+            <div class="product-overlay">
+              <button class="quick-view-btn">
+                <i class="fa-solid fa-eye"></i>
+                Schnellansicht
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Blond</h3>
+            <p class="product-artist">Frank Ocean</p>
+            <p class="product-genre">R&B</p>
+            <div class="product-price">
+              <span class="price-current">49,99 €</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fa-solid fa-shopping-cart"></i>
+              In den Warenkorb
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://via.placeholder.com/300x300/FF7675/FFFFFF?text=OK+Computer" alt="OK Computer - Radiohead">
+            <div class="product-overlay">
+              <button class="quick-view-btn">
+                <i class="fa-solid fa-eye"></i>
+                Schnellansicht
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">OK Computer</h3>
+            <p class="product-artist">Radiohead</p>
+            <p class="product-genre">Alternative</p>
+            <div class="product-price">
+              <span class="price-current">35,99 €</span>
+            </div>
+            <button class="add-to-cart-btn">
+              <i class="fa-solid fa-shopping-cart"></i>
+              In den Warenkorb
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Vinyl-Store
+  </footer>
+
+</body>
+</html>
